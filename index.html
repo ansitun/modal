@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Basic modal demo</title>
+        
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+        
+        <!-- I use jquery version 1.9.2 -->
+        <script src="jquery.js" type="text/javascript">
+        
+        </script>
+    <!-- Include the below script  for the javascript functions-->
+        <script src="j.js" type="text/javascript">
+        </script>
+        
+    </head>
+    <body>
+    
+    <!-- Please specify the class name as "logo" to the logo of your site.
+    Create a separate image tag of logo and add the class logo. -->
+        <img  src="images/logo3.jpg" class="logo"/>
+        
+    <!--Please pass the id of the div tag and the name of the class specified in logo in 
+        onclick event. -->
+        
+        <div id="modalbox1" onclick="$(this).modalpopup('logo')">
+               <img  src="images/main.jpg" width="400" height="300" />
+        </div>       
+        <br />
+ <div style="width: 600px; height: 200px;"><span>
+ The above image is a single image in a div tag.
+ Click it and see the effect. Then click on shadeed area or press escape key to revert to 
+ the original position.
+ </span>
+ <br /><br />
+ <span>
+ The below images are a group of images in a div tag. Click on any of the images, the first image will
+  be displayed by default. You navigate through the images using arrow keys only. Click on shaded 
+  area or press escape to revert to original position.
+  </span>
+ </div>
+ 
+ <!-- If there are more number of images, you can put all the images in a single div and
+ pass the id of the div to modalpopup function along with the class name of the logo. -->
+        <div id="modalbox2" onclick="$(this).modalpopup('logo')">
+               <img  src="images/main.jpg" width="400" height="300"/>
+               <img  src="images/ironman.gif" width="400" height="300"/>
+               <img  src="images/batman.jpg" width="400" height="300"/>
+               <img  src="images/shiva.jpg" width="400" height="300"/>
+        </div>   
+    </body>
+</html>
